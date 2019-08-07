@@ -16,11 +16,15 @@ public class array1 {
 		std[7]="anuradha";
 		std[8]="vinod";
 		
-		System.out.println(std[0]);
+		/*System.out.println(std[0]);
 		System.out.println(std[1]);
 		System.out.println(std[2]);
 		System.out.println(std[3]);
-		System.out.println(std[4]);
+		System.out.println(std[4]);*/
+		
+		for(int i=0;i<=4;i++)
+		{
+			System.out.println(std[i]);		}
 	}
 
 }
