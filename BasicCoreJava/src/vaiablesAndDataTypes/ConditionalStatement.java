@@ -7,7 +7,7 @@ public class ConditionalStatement {
 		int b=20;
 		 if (a<b)
 		 {
-			 System.out.println("a is less than b");
+			 System.out.println("a is less than b " + b);
 			 
 		 }
 		 else

@@ -35,6 +35,11 @@ public class NestedIfStatments {
 				System.out.println("a is greatest");
 			}
 		}
+		else 
+			{
+			System.out.println("a is smallest");
+			}
+			
 		
 		
 		
