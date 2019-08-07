@@ -26,7 +26,9 @@ public class Array2 {
 		{
 			for(int j=0;j<2;j++)
 			{
-			System.out.println(str[i][j]);
+			//System.out.println(str[i][j]);
+				
+				System.out.println(str[i] str[j]);
 		}
 		}
 	}
