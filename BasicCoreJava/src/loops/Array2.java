@@ -28,8 +28,9 @@ public class Array2 {
 			{
 			//System.out.println(str[i][j]);
 				
-				System.out.println(str[i] str[j]);
+				System.out.print(str[i][j]+" ");
 		}
+			System.out.println(" " );
 		}
 	}
 }
