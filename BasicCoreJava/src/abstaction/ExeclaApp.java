@@ -1,10 +1,14 @@
 package abstaction;
 
-public class ExeclaApp {
+public abstract class ExeclaApp {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		
+public abstract void spreadsheet();
+public abstract void save();
+public abstract void delete();
+public abstract void update();
+public abstract void filter();
 	}
 
-}
+
