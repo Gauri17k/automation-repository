@@ -31,7 +31,8 @@ public class ReadExcel {
 	
 	System.out.println(value);
 	
-	
+	System.out.println(row.getLastCellNum());
+	System.out.println(sheet.getLastRowNum());
 
 	}
 
