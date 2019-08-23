@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54" started-at="2019-08-23T16:12:46Z" finished-at="2019-08-23T16:12:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54" started-at="2019-08-23T16:12:46Z" finished-at="2019-08-23T16:12:46Z">
+      <class name="basicAnnotations.TestNGClass1">
+        <test-method status="PASS" signature="logicTestCase(java.lang.String, java.lang.String)[pri:0, instance:basicAnnotations.TestNGClass1@1375618]" name="logicTestCase" duration-ms="12" started-at="2019-08-23T21:42:46Z" data-provider="getData2" finished-at="2019-08-23T21:42:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logicTestCase -->
+        <test-method status="PASS" signature="logicTestCase(java.lang.String, java.lang.String)[pri:0, instance:basicAnnotations.TestNGClass1@1375618]" name="logicTestCase" duration-ms="2" started-at="2019-08-23T21:42:46Z" data-provider="getData2" finished-at="2019-08-23T21:42:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logicTestCase -->
+        <test-method status="PASS" signature="logicTestCase(java.lang.String, java.lang.String)[pri:0, instance:basicAnnotations.TestNGClass1@1375618]" name="logicTestCase" duration-ms="1" started-at="2019-08-23T21:42:46Z" data-provider="getData2" finished-at="2019-08-23T21:42:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logicTestCase -->
+      </class> <!-- basicAnnotations.TestNGClass1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
