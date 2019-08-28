@@ -19,7 +19,7 @@ public class TestNGClass1 {
 		System.out.println(password);
 	}
 	
-	@DataProvider                  /// to pass below row data
+	@DataProvider                  /// to pass below row data - to execute with multiple data set
 	
 	public String[][] getData() throws IOException
 	{
