@@ -2,15 +2,15 @@ package Basicselenium;
 
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class TestClass2 {
-	
-	ChromeDriver dr ;
+public class Testclass3 {
+ChromeDriver dr ;
 	
 	@Test	
 	public void BookFlight() throws InterruptedException {
@@ -68,39 +68,35 @@ public class TestClass2 {
 			
 		}
 		
+		dr.findElement(By.name("reserveFlights")).click();
 		
-		WebElement ele1=dr.findElement(By.name("fromPort"));
-			
+		dr.findElement(By.name("ticketLess")).click();
 		
-Select sel1=new Select(ele1);
+		System.out.println(dr.findElement(By.name("ticketLess")).isSelected());
 		
-		sel1.selectByIndex(2);
+		WebElement country=dr.findElement(By.name("delCountry"));
 		
-		Thread.sleep(2000);
+		Select ContSel= new Select (country);
 		
-		sel.selectByValue("Acapulco");
+		ContSel.selectByIndex(3);
 		
-		sel.selectByVisibleText("Frankfurt");
+		Alert alt=dr.switchTo().alert();
 		
-		dr.findElement(By.name("findFlights")).click(); 
+		System.out.println(alt.getText());
 		
-		WebElement table1=dr.findElement(By.xpath("//table[@cellpadding='2'][@cellspacing='1'][1]/tbody"));
+		//alt.accept();
 		
-		List<WebElement> rows1=table1.findElements(By.tagName("tr")); 
+		alt.dismiss();
 		
-		for(WebElement r:rows1) //enhance for loop- varible (r) of name array or collection -to iterate list data 
-		{
-			List<WebElement> cols=r.findElements(By.tagName("td")); 
-			
-			for (WebElement c:cols)
-			{ 
-				System.out.println(c.getText()); // to get value from column
-			}
-			
-		}
+		dr.findElement(By.name("buyFlights")).click();
+		
+		System.out.println(dr.findElement(By.xpath("//font[@size='+1']")));
+		
+	
 		
 		
+	//dr.close();
 		
-	}
-
+		
+}
 }

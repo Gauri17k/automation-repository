@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Basicselenium.TestClass1">
+      <class name="Basicselenium.TestClass4">
         <methods>
-          <include name="login"/>
-          <include name="logout"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- Basicselenium.TestClass1 -->
+      </class> <!-- Basicselenium.TestClass4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
