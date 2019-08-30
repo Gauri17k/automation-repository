@@ -54,9 +54,9 @@ public class TestNg1 {
 		data[2][1]="password3";
 	    return data;*/
 	    
-	    @DataProvider   
+	    //@DataProvider   
 		
-		public String[][] getData2()
+		/*public String[][] getData2()
 		{
 			String[][] data= new String[3][2];
 			//row 1
@@ -74,7 +74,7 @@ public class TestNg1 {
 			
 		
 			return data;
-		}
+		}*/
 	    
 	    
 	    

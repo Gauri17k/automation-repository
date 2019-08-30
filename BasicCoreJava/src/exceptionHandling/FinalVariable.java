@@ -9,9 +9,9 @@ public class FinalVariable extends FinalProc  {
     //  age=31;
 	}
 	
-	public void test()
+/*	public void test()
 	{
 		
 	}
-
+*/
 }
