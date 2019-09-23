@@ -16,10 +16,14 @@ WebDriver dr;
 	By Password=By.name("password");
 	By Login= By.name("login");
 	
+	
+	
 	public void login(String username, String password)
 	{
 		dr.findElement(this.userName).sendKeys(username);
 		dr.findElement(this.Password).sendKeys(password);
 		dr.findElement(Login).click();
+		
 	}
+
 }

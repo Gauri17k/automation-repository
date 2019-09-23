@@ -8,21 +8,23 @@ import org.testng.asserts.SoftAssert;
 
 import configuration.Config;
 import library.Apllicationlibrary;
+import pages.FlightFinder;
 import pages.Homepage;
 
 public class Tc_BookAFlightOneWayOnePassanger {
+	WebDriver dr=null;
 
 	@Test
-	public void script() {
+	public void login() {
 		
 		Apllicationlibrary lib= new Apllicationlibrary();
 		
-		WebDriver dr=null;
+	
 		
 		SoftAssert as=  new SoftAssert();
 		
-		try
-		{
+		
+	
 			dr=lib.launchBrowser("chrome"); // launch browser
 			as.assertTrue(dr!=null);
 			
@@ -40,17 +42,18 @@ public class Tc_BookAFlightOneWayOnePassanger {
 			
 			as.assertTrue(dr.getTitle().equals(title));
 			
-		}catch(Exception e)
-		{
-			e.printStackTrace();
-			
-		}finally
-		{
-			if (dr!=null)
-			dr.close();
-			as.assertAll();
-		}
 		
+	}
+	@Test(dependsOnMethods = {"login"})
+	
+	public void bookAFlight()
+	{
+		FlightFinder page2= new FlightFinder(dr);
 		
+		page2.ClickoneWay();
+		
+		page2.selectPassanger("1");
+		
+		page2.clickContinu();
 	}
 }
